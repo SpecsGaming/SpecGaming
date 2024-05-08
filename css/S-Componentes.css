@@ -108,6 +108,10 @@ nav {
   font-size: 0.9rem;
 }
 
+.login-section {
+  margin-top: -99px; /* Ajusta este valor según sea necesario */
+}
+
 .login-section form {
   margin-top: 50px;
   /* Ajusta el margen superior según sea necesario */
