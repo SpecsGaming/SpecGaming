@@ -1,0 +1,215 @@
+body {
+  background: linear-gradient(to right, #000000, #1408b6);
+  color: white;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-header,
+nav {
+  background: linear-gradient(to right, #000000, #1408b6);
+  color: white;
+}
+
+.navbar-header h1,
+.btn.btn-lg {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item.nav-link {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-item.nav-link.active {
+  color: yellow;
+}
+
+.navbar-nav .nav-item.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: yellow;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item.nav-link:not(.active)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item.nav-link:not(.active):hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-nav .nav-item.nav-link:not(.active):hover {
+  color: yellow;
+}
+
+.navbar-nav .btn.btn-lg {
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 45px;
+  border-radius: 20px;
+  background-color: #eefb03;
+  color: black;
+  margin-top: 3px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-nav .btn.btn-lg:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 8px 16px white;
+}
+
+.tuerca {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0; /* Añade esta propiedad */
+  margin: 0 auto; /* Centra horizontalmente */
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.tuerca img {
+  width:700px;
+  height: 600px;
+  opacity: 0.6;
+}
+
+.col-md-6 {
+  margin-top: 30px;
+  color: #eefb03;
+  align-items: center;
+}
+
+.display-4 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.a-Registro {
+  color: #eefb03;
+  justify-content: center;
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.login-section form .form-group {
+  max-width: 300px;
+}
+
+.login-section form .btn-primary {
+  background-color: #eefb03;
+  color: black;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-section form .btn-primary:hover {
+  background-color: #fff;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+.games-section {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.games-section .card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.games-section .card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.games-section .card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.games-section .card-text {
+  font-size: 1rem;
+  color: black;
+  display: inline-block;
+}
+
+.search-section {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#filterOptions {
+  display: none;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Asegura que se muestre por encima del resto */
+  width: 300px;
+}
+
+#filterOptions h5 {
+  color: black;
+}
+
+#filterOptions .form-check-label {
+  color: black;
+}
+#applyFiltersButton {
+  background-color: #eefb03;
+  color: black;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#applyFiltersButton:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 8px 16px white;
+}

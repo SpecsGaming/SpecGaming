@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(to right, #000000, #1408b6);
+    color: white;
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-header,
+  nav {
+    background: linear-gradient(to right, #000000, #1408b6);
+    color: white;
+  }
+  
+  .navbar-header h1,
+  .btn.btn-lg {
+    font-family: "Montserrat";
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-item.nav-link {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    margin-left: 10px;
+  }
+  
+  .navbar-nav .nav-item.nav-link.active {
+    color: yellow;
+  }
+  
+  .navbar-nav .nav-item.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-item.nav-link:not(.active)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-item.nav-link:not(.active):hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .navbar-nav .nav-item.nav-link:not(.active):hover {
+    color: yellow;
+  }
+  
+  .navbar-nav .btn.btn-lg {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 45px;
+    border-radius: 20px;
+    background-color: #eefb03;
+    color: black;
+    margin-top: 3px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .btn.btn-lg:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 8px 16px white;
+  }
+  
+
+  .result-section .lead {
+    font-size: 1.8rem; /* Aumento del tamaño del texto */
+    font-weight: bold;
+    color: #eefb03 !important;
+    margin-bottom: 20px; /* Espacio adicional debajo del texto */
+}
+
+
+.result-section ul {
+    font-size: 1.2rem;
+    text-align: center; /* Centrado del texto */
+    list-style-type: none; /* Eliminar los puntos por defecto */
+    padding: 0; /* Eliminar el relleno predeterminado de la lista */
+}
+
+.result-section ul li:before {
+    content: "\2022"; /* Agrega un punto como marcador */
+    color: white; /* Color del punto igual al color del texto */
+    display: inline-block;
+    width: 1em; /* Espacio entre el punto y el texto */
+    margin-left: -1em; /* Alinea el punto con el texto */
+}
+
+.result-section .lead,
+.result-section ul {
+    color: white; /* Cambio del color del texto a amarillo */
+}
+
+.result-section .btn-warning {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 45px; /* Aumento del relleno del botón */
+    border-radius: 20px;
+    background-color: #eefb03; /* Cambio de color de fondo */
+    color: black;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.result-section .btn-warning:hover {
+    background-color: #fff; /* Cambio de color de fondo al pasar el mouse */
+    color: black;
+    box-shadow: 0px 8px 16px #fff; /* Cambio de sombra al pasar el mouse */
+}
+

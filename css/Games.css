@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(to right, #000000, #1408b6);
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar-header,
+nav {
+    background: linear-gradient(to right, #000000, #1408b6);
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item.nav-link {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-item.nav-link.active {
+    color: yellow;
+}
+
+.navbar-nav .btn.btn-lg {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 45px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: black;
+    margin-top: 3px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-nav .btn.btn-lg:hover {
+    background-color: #eefb03;
+    color: black;
+    box-shadow: 0px 8px 16px #eefb03;
+}
+
+.main-content {
+    padding-top: 10px; /* Reducido para acercar el contenido al encabezado */
+}
+
+.result-section {
+    padding: 30px 0; /* Reducido para mantener la sección compacta */
+}
+
+.result-section .display-4 {
+    font-weight: bold;
+}
+
+.result-section .lead {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.result-section ul {
+    font-size: 1.2rem;
+}
+
+.result-section .btn-primary {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 45px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: black;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.result-section .btn-primary:hover {
+    background-color: #eefb03;
+    color: black;
+    box-shadow: 0px 8px 16px #eefb03;
+}
