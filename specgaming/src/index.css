@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item.nav-link::after {
+  content: '';
+  @apply block w-0 h-1 bg-yellow-400 rounded-full transition-all duration-300 ease-in-out;
+}
+
+.nav-item.nav-link:hover::after {
+  @apply w-full;
+}
+
+.nav-item.nav-link:hover {
+  @apply text-yellow-400;
+}
+
+.btn.btn-lg {
+  @apply text-center text-lg py-2 px-10 rounded-full bg-white text-black mt-1 transition-all duration-300 ease-in-out;
+}
+
+.btn.btn-lg:hover {
+  @apply bg-yellow-300 text-black shadow-lg;
+}
+
+body {
+  background-image: linear-gradient(to right, #000000, #1408b6) !important;
+}
+
+.nav-item.nav-link:hover {
+  color: #eefa04;
+}
+
+.btn.btn-lg {
+  background-color: #eefa04;
+}
+
+.btn.btn-lg:hover {
+  background-color: #f5fc68; /* Un color más claro para el hover */
+}
+
+.nav-link.active {
+  border-bottom: 2px solid yellow;
+}
